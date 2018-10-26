@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   # verb "/urls" => "namespace/controllers#action"
   namespace :api do
     post '/users' => 'users#create'
+    post 'sessions' => 'sessions#create'
   end
 end
